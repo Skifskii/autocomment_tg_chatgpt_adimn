@@ -1,4 +1,5 @@
 from asyncpg import UniqueViolationError
+import json
 
 from logs.log_all import log_all
 from utils.db_api.schemas.user import User
@@ -23,14 +24,32 @@ async def select_user(user_id):
     return user
 
 
-async def add_group(user_id, new_group):
+async def get_channels(user_id):
     user = await select_user(user_id)
-    await user.update(groups = user.groups + ' @@ ; @@ ' + new_group).apply()
+    channels = user.channels
+    if channels == '':
+        return []
+    return channels.split(', ')
 
 
-async def delete_groups(user_id):
+async def add_channel(user_id, new_channel):
+    user = await select_user(user_id)
+    if user.channels == '':
+        await user.update(channels = new_channel).apply()
+        return
+    await user.update(channels=user.channels + ', ' + new_channel).apply()
+
+
+async def delete_channel(user_id):
     user = await select_user(user_id)
     await user.update(groups='').apply()
+
+
+async def get_userbots(user_id):
+    user = await select_user(user_id)
+    json_userbots = user.userbots
+    dict_userbots = json.loads(json_userbots)
+    return dict_userbots['userbots']
 
 
 async def set_email(user_id, email):

@@ -1,123 +1,75 @@
-2023-07-04T01:57:29.747873+0300 :: INFO :: Bot started
-2023-07-04T01:57:36.603261+0300 :: ERROR :: in <function log_all at 0x00000253B2590AE0> :: id: 487799406, firstname: Петя :: Gino engine is not initialized.
-2023-07-04T02:07:31.428685+0300 :: INFO :: Bot started
-2023-07-04T02:10:42.550740+0300 :: INFO :: Bot started
-2023-07-04T02:11:28.651136+0300 :: INFO :: Bot started
-2023-07-04T14:13:25.416415+0300 :: INFO :: Bot started
-2023-07-04T14:14:08.866985+0300 :: ERROR :: in <function log_all at 0x0000020B347609A0> :: id: 487799406, firstname: Петя :: list index out of range
-2023-07-04T14:14:37.025716+0300 :: INFO :: Bot started
-2023-07-04T14:14:54.329533+0300 :: ERROR :: in start :: id: 487799406, firstname: Петя :: column users.lastname does not exist
-HINT:  Perhaps you meant to reference the column "users.firstname".
-2023-07-04T14:16:08.795295+0300 :: INFO :: Bot started
-2023-07-04T14:16:10.829655+0300 :: INFO :: in start :: id: 487799406, firstname: Петя :: New user
-2023-07-04T14:45:27.473275+0300 :: INFO :: Bot started
-2023-07-04T14:45:31.922252+0300 :: ERROR :: in start :: id: 487799406, firstname: Петя :: column users.groups does not exist
-2023-07-04T14:45:53.014552+0300 :: INFO :: Bot started
-2023-07-04T14:45:56.230835+0300 :: INFO :: in start :: id: 487799406, firstname: Петя :: New user
-2023-07-04T14:46:57.969857+0300 :: INFO :: Bot started
-2023-07-04T14:58:58.927535+0300 :: INFO :: Bot started
-2023-07-04T16:07:36.235659+0300 :: INFO :: Bot started
-2023-07-04T16:08:18.250457+0300 :: ERROR :: in take_group_info :: id: 487799406, firstname: Петя :: Message identifier is not specified
-2023-07-04T16:10:06.927626+0300 :: INFO :: Bot started
-2023-07-04T16:10:12.827136+0300 :: ERROR :: in profile :: id: 487799406, firstname: Петя :: 'group_list'
-2023-07-04T16:10:56.007812+0300 :: INFO :: Bot started
-2023-07-04T16:10:57.830063+0300 :: ERROR :: in command_my_groups :: id: 487799406, firstname: Петя :: 'group_list'
-2023-07-04T16:11:21.231303+0300 :: INFO :: Bot started
-2023-07-04T16:12:50.354223+0300 :: INFO :: Bot started
-2023-07-04T16:13:10.628820+0300 :: INFO :: Bot started
-2023-07-04T16:17:08.844805+0300 :: INFO :: Bot started
-2023-07-04T16:17:34.456330+0300 :: INFO :: Bot started
-2023-07-04T16:17:38.705175+0300 :: INFO :: in start :: id: 487799406, firstname: Петя :: New user
-2023-07-04T16:17:53.378895+0300 :: ERROR :: in take_group_info :: id: 487799406, firstname: Петя :: Bot.send_message() missing 1 required positional argument: 'text'
-2023-07-04T16:18:26.513837+0300 :: INFO :: Bot started
-2023-07-04T16:18:37.103337+0300 :: INFO :: Bot started
-2023-07-04T16:18:40.196241+0300 :: INFO :: in start :: id: 487799406, firstname: Петя :: New user
-2023-07-04T16:19:57.068940+0300 :: INFO :: Bot started
-2023-07-04T16:29:35.645728+0300 :: INFO :: Bot started
-2023-07-04T16:31:51.138531+0300 :: INFO :: Bot started
-2023-07-04T16:32:06.703895+0300 :: ERROR :: in take_group_info :: id: 487799406, firstname: Петя :: can only concatenate str (not "int") to str
-2023-07-04T16:33:07.591688+0300 :: INFO :: Bot started
-2023-07-04T16:33:12.997818+0300 :: ERROR :: in take_group_info :: id: 487799406, firstname: Петя :: pop index out of range
-2023-07-04T16:33:23.677477+0300 :: INFO :: Bot started
-2023-07-04T16:36:59.551543+0300 :: INFO :: Bot started
-2023-07-04T16:39:15.456342+0300 :: INFO :: Bot started
-2023-07-04T16:39:26.142871+0300 :: INFO :: Bot started
-2023-07-04T16:39:31.778949+0300 :: ERROR :: in command_my_groups :: id: 487799406, firstname: Петя :: 'NoneType' object has no attribute 'groups'
-2023-07-04T16:39:39.184472+0300 :: INFO :: in start :: id: 487799406, firstname: Петя :: New user
-2023-07-04T16:40:42.838254+0300 :: INFO :: Bot started
-2023-07-04T17:01:32.861954+0300 :: INFO :: Bot started
-2023-07-04T17:02:07.279237+0300 :: INFO :: Bot started
-2023-07-04T17:02:15.134183+0300 :: INFO :: Bot started
-2023-07-04T17:03:00.488757+0300 :: INFO :: Bot started
-2023-07-04T17:11:49.766117+0300 :: INFO :: Bot started
-2023-07-04T17:13:12.807342+0300 :: INFO :: Bot started
-2023-07-04T17:14:38.376921+0300 :: INFO :: Bot started
-2023-07-04T17:14:57.907367+0300 :: INFO :: in start :: id: 487799406, firstname: Петя :: New user
-2023-07-04T17:15:18.290052+0300 :: ERROR :: in take_group_info :: id: 487799406, firstname: Петя :: not enough values to unpack (expected 2, got 1)
-2023-07-04T17:15:25.744736+0300 :: ERROR :: in take_group_info :: id: 487799406, firstname: Петя :: not enough values to unpack (expected 2, got 1)
-2023-07-04T17:18:08.098158+0300 :: INFO :: Bot started
-2023-07-04T17:19:15.576357+0300 :: INFO :: Bot started
-2023-07-04T17:19:15.745811+0300 :: INFO :: in start :: id: 5592822561, firstname: Азнаур :: New user
-2023-07-04T17:19:23.408519+0300 :: ERROR :: in start :: id: 487799406, firstname: Петя :: not enough values to unpack (expected 4, got 1)
-2023-07-04T17:19:56.967183+0300 :: INFO :: Bot started
-2023-07-04T17:20:06.377226+0300 :: INFO :: Bot started
-2023-07-04T17:20:24.081986+0300 :: INFO :: Bot started
-2023-07-04T17:20:28.552774+0300 :: ERROR :: in start :: id: 487799406, firstname: Петя :: 'list' object has no attribute 'split'
-2023-07-04T17:20:48.018394+0300 :: INFO :: Bot started
-2023-07-04T17:20:50.738398+0300 :: ERROR :: in start :: id: 487799406, firstname: Петя :: 'list' object has no attribute 'split'
-2023-07-04T17:21:07.674830+0300 :: INFO :: Bot started
-2023-07-04T17:21:28.281396+0300 :: INFO :: Bot started
-2023-07-04T17:48:29.943770+0300 :: INFO :: Bot started
-2023-07-04T17:49:43.245645+0300 :: INFO :: Bot started
-2023-07-04T17:49:43.397190+0300 :: INFO :: in start :: id: 487799406, firstname: Петя :: New user
-2023-07-04T17:51:54.894718+0300 :: ERROR :: in command_my_userbots :: id: 487799406, firstname: Петя :: list index out of range
-2023-07-04T17:52:51.159393+0300 :: ERROR :: in command_my_userbots :: id: 487799406, firstname: Петя :: list index out of range
-2023-07-04T18:01:13.655378+0300 :: INFO :: Bot started
-2023-07-04T18:02:31.051855+0300 :: INFO :: in start :: id: 487799406, firstname: Петя :: New user
-2023-07-05T01:15:16.327841+0300 :: INFO :: Bot started
-2023-07-05T01:15:28.422786+0300 :: ERROR :: in take_group_info :: id: 487799406, firstname: Петя :: not enough values to unpack (expected 2, got 1)
-2023-07-05T01:15:56.617971+0300 :: INFO :: Bot started
-2023-07-05T01:16:04.250526+0300 :: ERROR :: in take_group_info :: id: 487799406, firstname: Петя :: not enough values to unpack (expected 2, got 1)
-2023-07-05T01:16:33.844320+0300 :: INFO :: Bot started
-2023-07-05T01:20:59.879629+0300 :: INFO :: Bot started
-2023-07-05T01:21:10.341392+0300 :: ERROR :: in take_group_info :: id: 487799406, firstname: Петя :: not enough values to unpack (expected 2, got 1)
-2023-07-05T01:34:36.757512+0300 :: INFO :: Bot started
-2023-07-05T01:34:59.910370+0300 :: INFO :: Bot started
-2023-07-05T01:35:05.867881+0300 :: WARNING :: in take_group_info :: id: 487799406, firstname: Петя :: not enough values to unpack (expected 2, got 1)
-2023-07-05T01:35:49.173062+0300 :: WARNING :: in take_group_info :: id: 487799406, firstname: Петя :: not enough values to unpack (expected 2, got 1)
-2023-07-05T01:36:25.212036+0300 :: INFO :: Bot started
-2023-07-05T01:36:33.210677+0300 :: WARNING :: in take_group_info :: id: 487799406, firstname: Петя :: not enough values to unpack (expected 2, got 1)
-2023-07-05T01:36:45.750207+0300 :: WARNING :: in take_group_info :: id: 487799406, firstname: Петя :: Bad link. Bad link
-2023-07-05T01:40:56.210128+0300 :: INFO :: Bot started
-2023-07-05T01:42:20.164755+0300 :: ERROR :: in take_group_info :: id: 487799406, firstname: Петя :: invalid literal for int() with base 10: 'asdasd'
-2023-07-05T01:43:14.908420+0300 :: INFO :: Bot started
-2023-07-05T01:43:25.830196+0300 :: ERROR :: in take_group_info :: id: 487799406, firstname: Петя :: invalid literal for int() with base 10: 'asdasd'
-2023-07-05T01:45:53.682397+0300 :: INFO :: Bot started
-2023-07-05T01:46:00.046437+0300 :: ERROR :: in take_group_info :: id: 487799406, firstname: Петя :: invalid literal for int() with base 10: 'asdasd' <class 'ValueError'>
-2023-07-05T01:46:06.423922+0300 :: ERROR :: in take_group_info :: id: 487799406, firstname: Петя :: invalid literal for int() with base 10: 'asdad' <class 'ValueError'>
-2023-07-05T01:46:31.042885+0300 :: INFO :: Bot started
-2023-07-05T01:46:43.617620+0300 :: ERROR :: in take_group_info :: id: 487799406, firstname: Петя :: invalid literal for int() with base 10: 'asdasd' <class 'ValueError'>
-2023-07-05T01:47:07.064340+0300 :: INFO :: Bot started
-2023-07-05T01:51:05.109583+0300 :: INFO :: Bot started
-2023-07-05T02:39:02.394663+0300 :: INFO :: Bot started
-2023-07-05T02:39:21.131977+0300 :: INFO :: in start :: id: 487799406, firstname: Петя :: New user
-2023-07-05T02:40:51.958731+0300 :: WARNING :: in take_group_info :: id: 487799406, firstname: Петя :: not enough values to unpack (expected 2, got 1)
-2023-07-05T02:41:13.689202+0300 :: WARNING :: in take_group_info :: id: 487799406, firstname: Петя :: Bad link. Bad link
-2023-07-05T02:41:31.767612+0300 :: ERROR :: in command_my_userbots :: id: 487799406, firstname: Петя :: list index out of range
-2023-07-05T02:42:07.634703+0300 :: INFO :: Bot started
-2023-07-05T02:42:14.034817+0300 :: INFO :: in start :: id: 487799406, firstname: Петя :: New user
-2023-07-05T02:42:16.257910+0300 :: ERROR :: in command_my_userbots :: id: 487799406, firstname: Петя :: list index out of range
-2023-07-05T02:42:53.284928+0300 :: INFO :: Bot started
-2023-07-05T02:43:15.962040+0300 :: INFO :: Bot started
-2023-07-05T02:43:20.561420+0300 :: INFO :: in start :: id: 487799406, firstname: Петя :: New user
-2023-07-05T13:41:52.227408+0300 :: INFO :: Bot started
-2023-07-05T13:42:41.328305+0300 :: INFO :: in start :: id: 399820944, firstname: Александр :: New user
-2023-07-05T13:54:32.642523+0300 :: INFO :: Bot started
-2023-07-05T13:55:28.662555+0300 :: INFO :: Bot started
-2023-07-05T14:44:17.661312+0300 :: WARNING :: in take_group_info :: id: 399820944, firstname: Александр :: not enough values to unpack (expected 2, got 1)
-2023-07-05T14:44:53.808913+0300 :: WARNING :: in take_group_info :: id: 399820944, firstname: Александр :: not enough values to unpack (expected 2, got 1)
-2023-07-05T14:45:04.526992+0300 :: WARNING :: in take_group_info :: id: 399820944, firstname: Александр :: not enough values to unpack (expected 2, got 1)
-2023-07-05T15:32:12.593398+0300 :: INFO :: in start :: id: 5966769062, firstname: Александр Прокопьев | Трафик в TG :: New user
-2023-07-05T15:35:28.376241+0300 :: WARNING :: in take_group_info :: id: 5966769062, firstname: Александр Прокопьев | Трафик в TG :: not enough values to unpack (expected 2, got 1)
-2023-07-05T15:36:07.375794+0300 :: ERROR :: in take_group_info :: id: 5966769062, firstname: Александр Прокопьев | Трафик в TG :: invalid literal for int() with base 10: '/my_groups' <class 'ValueError'>
-2023-07-05T15:36:30.496753+0300 :: ERROR :: in take_group_info :: id: 5966769062, firstname: Александр Прокопьев | Трафик в TG :: invalid literal for int() with base 10: '1) "Админские угодья' <class 'ValueError'>
+2023-07-11T21:25:28.638218+0300 :: INFO :: Bot started
+2023-07-11T22:33:35.949290+0300 :: INFO :: Bot started
+2023-07-11T22:33:44.980005+0300 :: ERROR :: in command_my_groups :: id: 487799406, firstname: Петя :: column users.channels does not exist
+2023-07-11T22:33:52.709820+0300 :: ERROR :: in start :: id: 487799406, firstname: Петя :: column users.channels does not exist
+2023-07-11T22:34:07.939643+0300 :: INFO :: Bot started
+2023-07-11T22:34:12.599490+0300 :: INFO :: in start :: id: 487799406, firstname: Петя :: New user
+2023-07-11T22:35:05.489539+0300 :: INFO :: Bot started
+2023-07-11T22:36:26.218627+0300 :: INFO :: Bot started
+2023-07-11T22:36:52.972877+0300 :: INFO :: Bot started
+2023-07-12T00:25:43.761792+0300 :: INFO :: Bot started
+2023-07-12T00:26:09.033972+0300 :: INFO :: Bot started
+2023-07-12T00:44:46.321638+0300 :: INFO :: Bot started
+2023-07-12T00:47:21.325462+0300 :: ERROR :: in take_group_info :: id: 487799406, firstname: Петя :: 'User' object has no attribute 'groups'
+2023-07-12T00:47:30.965490+0300 :: INFO :: Bot started
+2023-07-12T00:48:08.142320+0300 :: INFO :: Bot started
+2023-07-12T00:49:17.253182+0300 :: INFO :: in start :: id: 487799406, firstname: Петя :: New user
+2023-07-12T00:51:25.397672+0300 :: INFO :: Bot started
+2023-07-12T00:51:30.938896+0300 :: ERROR :: in command_my_groups :: id: 487799406, firstname: Петя :: 'NoneType' object has no attribute 'channels'
+2023-07-12T00:51:34.986763+0300 :: INFO :: in start :: id: 487799406, firstname: Петя :: New user
+2023-07-12T03:04:48.788137+0300 :: INFO :: Bot started
+2023-07-12T03:05:36.011602+0300 :: INFO :: Bot started
+2023-07-12T03:08:28.195946+0300 :: INFO :: Bot started
+2023-07-12T03:16:13.704673+0300 :: INFO :: Bot started
+2023-07-12T03:16:13.871191+0300 :: INFO :: in start :: id: 487799406, firstname: Петя :: New user
+2023-07-12T03:26:05.747030+0300 :: INFO :: Bot started
+2023-07-12T03:26:54.663345+0300 :: INFO :: Bot started
+2023-07-12T03:28:32.899667+0300 :: INFO :: Bot started
+2023-07-12T03:35:43.805694+0300 :: INFO :: Bot started
+2023-07-12T03:36:11.910491+0300 :: INFO :: Bot started
+2023-07-12T03:43:37.988721+0300 :: INFO :: Bot started
+2023-07-12T03:49:11.273991+0300 :: INFO :: Bot started
+2023-07-12T03:49:14.930218+0300 :: ERROR :: in btn_add_pressed :: id: 5819125674, firstname: Autocom Admin (test) :: not enough values to unpack (expected 2, got 1)
+2023-07-12T03:50:41.431514+0300 :: INFO :: Bot started
+2023-07-12T03:52:40.853588+0300 :: INFO :: Bot started
+2023-07-12T03:53:05.861183+0300 :: INFO :: Bot started
+2023-07-12T03:53:06.067696+0300 :: ERROR :: in btn_right_pressed :: id: 5819125674, firstname: Autocom Admin (test) :: not enough values to unpack (expected 2, got 1)
+2023-07-12T03:53:09.109025+0300 :: ERROR :: in btn_right_pressed :: id: 5819125674, firstname: Autocom Admin (test) :: not enough values to unpack (expected 2, got 1)
+2023-07-12T03:56:32.742385+0300 :: INFO :: Bot started
+2023-07-12T03:57:19.860457+0300 :: INFO :: Bot started
+2023-07-12T03:57:30.546475+0300 :: ERROR :: in btn_right_pressed :: id: 5819125674, firstname: Autocom Admin (test) :: invalid literal for int() with base 10: 'Стр.'
+2023-07-12T03:57:40.944528+0300 :: INFO :: Bot started
+2023-07-12T03:57:51.119037+0300 :: ERROR :: in btn_right_pressed :: id: 5819125674, firstname: Autocom Admin (test) :: invalid literal for int() with base 10: 'Стр.'
+2023-07-12T03:58:15.364249+0300 :: INFO :: Bot started
+2023-07-12T03:58:50.629707+0300 :: INFO :: Bot started
+2023-07-12T03:59:53.998849+0300 :: INFO :: Bot started
+2023-07-12T04:00:54.737419+0300 :: INFO :: Bot started
+2023-07-12T04:08:03.259582+0300 :: INFO :: Bot started
+2023-07-12T04:32:31.320545+0300 :: INFO :: Bot started
+2023-07-12T05:19:47.830243+0300 :: INFO :: Bot started
+2023-07-12T05:20:28.052637+0300 :: INFO :: Bot started
+2023-07-12T05:21:25.180397+0300 :: INFO :: Bot started
+2023-07-12T05:22:01.198886+0300 :: INFO :: Bot started
+2023-07-12T05:22:02.888773+0300 :: ERROR :: in command_my_userbots :: id: 487799406, firstname: Петя :: Expecting value: line 1 column 2 (char 1)
+2023-07-12T05:23:29.525121+0300 :: INFO :: Bot started
+2023-07-12T05:23:33.300217+0300 :: INFO :: in start :: id: 487799406, firstname: Петя :: New user
+2023-07-12T05:47:23.028412+0300 :: INFO :: Bot started
+2023-07-12T05:47:34.949752+0300 :: ERROR :: in command_my_userbots :: id: 487799406, firstname: Петя :: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2023-07-12T05:48:25.057502+0300 :: INFO :: Bot started
+2023-07-12T05:48:26.547793+0300 :: ERROR :: in command_my_userbots :: id: 487799406, firstname: Петя :: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2023-07-12T05:48:56.882745+0300 :: INFO :: Bot started
+2023-07-12T05:51:15.418686+0300 :: INFO :: Bot started
+2023-07-12T05:55:43.366880+0300 :: INFO :: Bot started
+2023-07-12T05:57:30.531674+0300 :: INFO :: Bot started
+2023-07-12T05:59:54.661012+0300 :: INFO :: Bot started
+2023-07-12T06:04:32.438681+0300 :: INFO :: Bot started
+2023-07-12T06:04:47.448747+0300 :: INFO :: Bot started
+2023-07-12T06:05:52.975794+0300 :: INFO :: Bot started
+2023-07-12T06:07:39.326678+0300 :: INFO :: Bot started
+2023-07-12T06:08:51.690341+0300 :: INFO :: Bot started
+2023-07-12T06:09:40.808509+0300 :: INFO :: Bot started
+2023-07-12T06:11:32.291317+0300 :: INFO :: Bot started
+2023-07-12T06:15:09.686751+0300 :: INFO :: Bot started
+2023-07-12T06:16:27.518872+0300 :: INFO :: Bot started
+2023-07-12T06:17:12.091976+0300 :: INFO :: Bot started
+2023-07-12T06:17:24.259749+0300 :: INFO :: Bot started
