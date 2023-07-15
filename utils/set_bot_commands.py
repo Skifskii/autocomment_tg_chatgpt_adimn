@@ -5,7 +5,7 @@ async def set_default_commands(dp):
         types.BotCommand('start', 'Начать работу'),
         types.BotCommand('my_channels', 'Мои каналы'),
         types.BotCommand('my_userbots', 'Мои юзерботы'),
-        types.BotCommand('start_userbots', 'Начать автокомментинг')
+        types.BotCommand('start_userbots', 'Начать подписку')
 
 
         # types.BotCommand('help', 'Помощь'),

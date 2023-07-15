@@ -82,18 +82,18 @@ userbots_list_message = """
 
 - Имя: <b><i>{firstname}</i></b>
 - Фамилия: <b><i>{lastname}</i></b>
-- Username: <i>{username}</i>
+- bio: <b><i>{bio}</i></b>
 
-- Пол: <i>{sex}</i>
-- Возраст: <i>{age}</i>
-- Использование эмодзи: <i>{use_emoji}</i>
+- Пол: <b><i>{sex}</i></b>
+- Возраст: <b><i>{age}</i></b>
+- Использование эмодзи: <b><i>{use_emoji}</i></b>
 - Задача GPT: 
 <code>{gpt_task}</code>
 
 - Поддерживаемые форматы:
-    - Комментирование постов: <i>{commenting_posts}</i>
-    - Общение в комментариях: <i>{chat_in_comments}</i>
-    - Общение в группах: <i>{chat_in_groups}</i>
+    - Комментирование постов: <b><i>{commenting_posts}</i></b>
+    - Общение в комментариях: <b><i>{chat_in_comments}</i></b>
+    - Общение в группах: <b><i>{chat_in_groups}</i></b>
 
 <b>№ {page_number}/{total_number_of_pages}</b>"""
 

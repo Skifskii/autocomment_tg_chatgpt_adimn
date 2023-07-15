@@ -60,7 +60,7 @@ async def btn_move_pressed(query: types.CallbackQuery):
             if this_page_number < max_page_number:
                 new_page_number = this_page_number + 1
         else:
-            if this_page_number > 0:
+            if this_page_number > 1:
                 new_page_number = this_page_number - 1
 
         if new_page_number == -1:
@@ -100,6 +100,7 @@ async def get_channels(message: types.Message, state: FSMContext):
     try:
         channels = message.text.split('\n')
         for channel in channels:
+            channel = channel.replace('https://t.me/', '')
             if not channel.startswith('@'):
                 channel = '@' + channel
             await db_users.add_channel(message.from_user.id, channel)

@@ -3,3 +3,11 @@ from .image import Image
 from .select_user import SelectUser
 from .add_channel import AddChannel
 from .delete_channel import DeleteChannel
+from .new_age import NewAge
+from .new_gpt_task import NewGptTask
+from .take_new_subscribe_delay import TakeNewSubscribeData
+from .take_new_answer_delay import TakeNewAnswerData
+from .take_new_keywords import TakeNewKeywords
+from .new_firstname import NewFirstname
+from .new_lastname import NewLastname
+from .new_bio import NewBio

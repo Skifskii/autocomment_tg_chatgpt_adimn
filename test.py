@@ -3,8 +3,15 @@ import json
 d = {
     "userbots": [
         {
-            "firstname": "",
-            "lastname": "",
+            "api_data": {
+                "phone": "+79094009878",
+                "password": "56e5414d9bdF",
+                "telegram_id": "5592822561",
+                "api_id": 28579817,
+                "api_hash": "6c4a628de1b7b5a4461248d2683d45d4"
+            },
+            "firstname": "Азнаур",
+            "lastname": "Хизкияев",
             "username": "",
             "sex": "M",
             "age": "20",
@@ -19,30 +26,7 @@ d = {
     ]
 }
 
-# d['userbots'][0]['username'] = ''
-# print(d)
+# test_s = '{"userbots": [{"firstname": "", "lastname": "", "username": "", "sex": "M", "age": "20", "gpt_task": "ты играешь роль комментатора постов в социальных сетях. Пиши короткие комментарии, высказывая свое мнение по теме поста или соглашаясь с автором. Используй сленг. Пиши так, будто общаешься с друзьями.", "use_emoji": false, "formats": {"commenting_posts": true, "chat_in_comments": false, "chat_in_groups": false}}]}'
+json_s = json.dumps(d)
 
-# s = """
-# {
-#     "userbots": [
-#         {
-#             "firstname": "Ivan",
-#             "lastname": "Ivanov"
-#
-#         }
-#     ]
-# }
-# """
-#
-# dict_s = json.loads(s)
-# dict_s['userbots'].append({'firstname': 'Leonardo', 'lastname': 'Brown'})
-#
-# new_json = json.dumps(dict_s)
-#
-# print(new_json)
-
-
-test_s = '{"userbots": [{"firstname": "", "lastname": "", "username": "", "sex": "M", "age": "20", "gpt_task": "ты играешь роль комментатора постов в социальных сетях. Пиши короткие комментарии, высказывая свое мнение по теме поста или соглашаясь с автором. Используй сленг. Пиши так, будто общаешься с друзьями.", "use_emoji": false, "formats": {"commenting_posts": true, "chat_in_comments": false, "chat_in_groups": false}}]}'
-dict_s = json.loads(test_s)
-
-print(dict_s)
+print(json_s)

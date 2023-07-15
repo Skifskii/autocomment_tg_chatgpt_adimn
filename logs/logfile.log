@@ -73,3 +73,123 @@
 2023-07-12T06:16:27.518872+0300 :: INFO :: Bot started
 2023-07-12T06:17:12.091976+0300 :: INFO :: Bot started
 2023-07-12T06:17:24.259749+0300 :: INFO :: Bot started
+2023-07-12T18:07:00.553270+0300 :: INFO :: Bot started
+2023-07-12T18:08:45.085934+0300 :: INFO :: Bot started
+2023-07-12T18:09:07.511159+0300 :: INFO :: Bot started
+2023-07-12T19:54:25.218131+0300 :: INFO :: Bot started
+2023-07-12T19:56:23.230872+0300 :: INFO :: Bot started
+2023-07-12T20:02:01.014794+0300 :: INFO :: Bot started
+2023-07-12T20:04:59.979365+0300 :: INFO :: Bot started
+2023-07-13T16:49:45.061047+0300 :: INFO :: Bot started
+2023-07-13T16:50:30.172916+0300 :: INFO :: Bot started
+2023-07-13T17:02:30.674874+0300 :: INFO :: Bot started
+2023-07-13T17:07:37.654801+0300 :: INFO :: Bot started
+2023-07-13T17:07:49.972429+0300 :: INFO :: Bot started
+2023-07-13T17:08:00.740591+0300 :: INFO :: Bot started
+2023-07-13T17:16:43.193369+0300 :: INFO :: Bot started
+2023-07-13T17:22:49.862138+0300 :: INFO :: Bot started
+2023-07-13T22:19:43.405277+0300 :: INFO :: Bot started
+2023-07-13T22:19:57.552123+0300 :: INFO :: Bot started
+2023-07-13T22:20:44.449610+0300 :: INFO :: in start :: id: 487799406, firstname: Петя :: New user
+2023-07-13T22:35:27.121017+0300 :: INFO :: Bot started
+2023-07-13T22:35:35.566454+0300 :: ERROR :: in command_my_userbots :: id: 487799406, firstname: Петя :: invalid input for query argument $1: '5592822561' ('str' object cannot be interpreted as an integer)
+2023-07-13T22:35:59.701187+0300 :: INFO :: Bot started
+2023-07-14T03:26:22.117641+0300 :: INFO :: Bot started
+2023-07-14T04:03:59.177330+0300 :: INFO :: Bot started
+2023-07-14T04:04:24.846553+0300 :: ERROR :: in start :: id: 487799406, firstname: Петя :: invalid input for query argument $1: '5592822561' ('str' object cannot be interpreted as an integer)
+2023-07-14T04:06:42.805426+0300 :: INFO :: Bot started
+2023-07-14T04:28:15.420816+0300 :: INFO :: Bot started
+2023-07-14T04:53:09.707192+0300 :: INFO :: Bot started
+2023-07-14T04:55:11.119022+0300 :: INFO :: Bot started
+2023-07-14T05:00:43.629670+0300 :: INFO :: Bot started
+2023-07-14T05:01:03.393607+0300 :: INFO :: Bot started
+2023-07-14T05:03:40.764399+0300 :: INFO :: Bot started
+2023-07-14T05:03:47.779717+0300 :: ERROR :: in btn_move_pressed :: id: 5819125674, firstname: Autocom Admin (test) :: list index out of range
+2023-07-14T05:04:06.515245+0300 :: ERROR :: in btn_move_pressed :: id: 5819125674, firstname: Autocom Admin (test) :: list index out of range
+2023-07-14T05:06:28.620633+0300 :: INFO :: Bot started
+2023-07-14T05:18:06.520972+0300 :: INFO :: Bot started
+2023-07-14T05:23:03.937715+0300 :: INFO :: Bot started
+2023-07-14T05:43:01.897532+0300 :: INFO :: Bot started
+2023-07-14T05:43:26.950624+0300 :: ERROR :: in btn_reset_sex :: id: 5819125674, firstname: Autocom Admin (test) :: invalid input for query argument $1: '5592822561' ('str' object cannot be interpreted as an integer)
+2023-07-14T05:44:06.423431+0300 :: INFO :: Bot started
+2023-07-14T06:22:24.076092+0300 :: INFO :: Bot started
+2023-07-14T06:23:31.502106+0300 :: INFO :: Bot started
+2023-07-14T06:27:56.184687+0300 :: INFO :: Bot started
+2023-07-14T06:28:06.180671+0300 :: WARNING :: in take_new_age :: id: 487799406, firstname: Петя :: invalid literal for int() with base 10: 'Ро'
+2023-07-14T06:28:12.899204+0300 :: ERROR :: in take_new_age :: id: 487799406, firstname: Петя :: '<=' not supported between instances of 'int' and 'str'
+2023-07-14T06:28:24.300611+0300 :: INFO :: Bot started
+2023-07-14T06:28:28.851225+0300 :: WARNING :: in take_new_age :: id: 487799406, firstname: Петя :: invalid literal for int() with base 10: 'Ро'
+2023-07-14T06:28:35.190707+0300 :: WARNING :: in take_new_age :: id: 487799406, firstname: Петя :: not enough values to unpack (expected 2, got 1)
+2023-07-14T06:53:26.087602+0300 :: INFO :: Bot started
+2023-07-14T06:54:23.027723+0300 :: INFO :: Bot started
+2023-07-14T06:55:04.128820+0300 :: INFO :: Bot started
+2023-07-14T06:55:14.264412+0300 :: ERROR :: in btn_cancel_pressed :: id: 5819125674, firstname: Autocom Admin (test) :: Bot.delete_message() missing 2 required positional arguments: 'chat_id' and 'message_id'
+2023-07-14T06:56:06.321755+0300 :: INFO :: Bot started
+2023-07-14T06:57:13.490311+0300 :: INFO :: Bot started
+2023-07-14T06:57:26.690263+0300 :: WARNING :: in take_new_age :: id: 487799406, firstname: Петя :: invalid literal for int() with base 10: 'Роп'
+2023-07-14T06:58:07.693842+0300 :: INFO :: Bot started
+2023-07-14T07:09:31.868422+0300 :: INFO :: Bot started
+2023-07-14T07:11:45.582611+0300 :: INFO :: Bot started
+2023-07-14T07:12:04.685873+0300 :: INFO :: Bot started
+2023-07-14T07:12:34.513227+0300 :: ERROR :: in btn_use_emoji_pressed :: id: 5819125674, firstname: Autocom Admin (test) :: invalid literal for int() with base 10: 'posts'
+2023-07-14T07:13:03.846769+0300 :: INFO :: Bot started
+2023-07-14T07:13:09.963503+0300 :: ERROR :: in btn_use_emoji_pressed :: id: 5819125674, firstname: Autocom Admin (test) :: invalid literal for int() with base 10: 'posts'
+2023-07-14T07:14:39.855851+0300 :: INFO :: Bot started
+2023-07-14T07:20:19.452204+0300 :: INFO :: Bot started
+2023-07-14T07:22:36.259558+0300 :: INFO :: Bot started
+2023-07-14T07:23:06.075759+0300 :: INFO :: Bot started
+2023-07-14T07:23:31.110404+0300 :: INFO :: Bot started
+2023-07-14T07:25:15.545164+0300 :: INFO :: Bot started
+2023-07-14T07:32:21.205683+0300 :: INFO :: Bot started
+2023-07-14T07:41:20.782932+0300 :: INFO :: Bot started
+2023-07-14T08:18:31.822800+0300 :: INFO :: Bot started
+2023-07-14T08:43:06.503298+0300 :: INFO :: Bot started
+2023-07-14T08:43:30.676704+0300 :: INFO :: in start :: id: 487799406, firstname: Петя :: New user
+2023-07-14T09:05:41.999270+0300 :: INFO :: Bot started
+2023-07-14T09:08:26.010646+0300 :: INFO :: Bot started
+2023-07-14T09:10:00.008628+0300 :: INFO :: Bot started
+2023-07-14T09:15:11.207203+0300 :: INFO :: Bot started
+2023-07-14T09:15:24.530740+0300 :: INFO :: Bot started
+2023-07-14T09:15:42.491726+0300 :: INFO :: Bot started
+2023-07-14T09:34:22.857974+0300 :: INFO :: Bot started
+2023-07-14T09:34:44.055514+0300 :: ERROR :: in take_new_delay_subscribe :: id: 487799406, firstname: Петя :: btn_common_settings_pressed() missing 1 required positional argument: 'query'
+2023-07-14T09:37:58.955869+0300 :: INFO :: Bot started
+2023-07-14T10:21:30.942858+0300 :: INFO :: Bot started
+2023-07-14T10:28:34.398713+0300 :: INFO :: Bot started
+2023-07-14T10:42:40.877838+0300 :: INFO :: Bot started
+2023-07-14T10:44:12.412666+0300 :: INFO :: Bot started
+2023-07-14T10:45:10.589164+0300 :: INFO :: Bot started
+2023-07-14T10:51:11.283666+0300 :: INFO :: Bot started
+2023-07-14T10:52:18.873946+0300 :: INFO :: Bot started
+2023-07-14T10:57:37.022203+0300 :: INFO :: Bot started
+2023-07-14T11:08:41.698344+0300 :: INFO :: Bot started
+2023-07-14T12:14:28.619356+0300 :: INFO :: Bot started
+2023-07-14T12:31:21.769178+0300 :: INFO :: Bot started
+2023-07-14T12:31:25.773513+0300 :: ERROR :: in btn_reset_firstname_pressed :: id: 5819125674, firstname: Autocom Admin (test) :: column userbots.bio does not exist
+2023-07-14T12:31:42.756385+0300 :: INFO :: Bot started
+2023-07-14T12:34:53.995387+0300 :: INFO :: Bot started
+2023-07-14T12:35:17.799269+0300 :: INFO :: Bot started
+2023-07-14T12:41:15.756579+0300 :: INFO :: Bot started
+2023-07-14T12:51:49.169998+0300 :: INFO :: Bot started
+2023-07-14T13:00:01.527948+0300 :: INFO :: Bot started
+2023-07-14T13:01:20.966106+0300 :: INFO :: Bot started
+2023-07-14T13:01:48.326322+0300 :: INFO :: Bot started
+2023-07-14T13:02:18.567348+0300 :: INFO :: Bot started
+2023-07-14T13:02:27.590882+0300 :: INFO :: Bot started
+2023-07-14T13:02:48.648173+0300 :: INFO :: Bot started
+2023-07-14T13:02:53.416011+0300 :: ERROR :: in btn_reset_bio :: id: 5819125674, firstname: Autocom Admin (test) :: empty separator
+2023-07-14T13:04:31.309201+0300 :: INFO :: Bot started
+2023-07-14T13:04:37.288220+0300 :: ERROR :: in btn_firstname_ok_reset_pressed :: id: 5819125674, firstname: Autocom Admin (test) :: empty separator
+2023-07-14T13:04:52.820177+0300 :: INFO :: Bot started
+2023-07-14T13:05:13.830788+0300 :: INFO :: Bot started
+2023-07-14T13:08:19.002065+0300 :: INFO :: Bot started
+2023-07-14T21:29:25.082316+0300 :: INFO :: Bot started
+2023-07-14T21:29:39.415148+0300 :: INFO :: in start :: id: 487799406, firstname: Петя :: New user
+2023-07-14T21:30:42.952644+0300 :: INFO :: Bot started
+2023-07-14T21:35:39.344931+0300 :: INFO :: Bot started
+2023-07-14T21:35:59.707245+0300 :: INFO :: Bot started
+2023-07-14T21:47:24.045038+0300 :: INFO :: Bot started
+2023-07-14T22:15:43.623559+0300 :: INFO :: Bot started
+2023-07-14T22:19:47.085471+0300 :: INFO :: in start :: id: 487799406, firstname: Петя :: New user
+2023-07-14T23:01:45.321853+0300 :: INFO :: in start :: id: 5790191553, firstname: Александр :: New user
+2023-07-14T23:10:47.515219+0300 :: WARNING :: in take_new_delay_answer :: id: 5790191553, firstname: Александр :: invalid literal for int() with base 10: '/start'

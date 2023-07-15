@@ -9,9 +9,12 @@ class User(BaseModel):
     firstname = Column(String(64), default='')
     lastname = Column(String(64), default='')
     channels = Column(String, default='')
-    userbots = Column(String, default='{"userbots": []}')
+    userbots = Column(String, default='5592822561')
     email = Column(String, default='')
     status = Column(VARCHAR, default='user')
     date_subscription_finish = Column(String, default='')
+    keywords = Column(String, default='')
+    answer_delay = Column(Integer, default=10)
+    subscribe_delay = Column(Integer, default=60)
 
     query: sql.select

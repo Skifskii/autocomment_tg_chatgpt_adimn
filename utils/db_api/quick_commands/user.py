@@ -24,7 +24,7 @@ async def select_user(user_id):
     return user
 
 
-async def get_channels(user_id):
+async def get_channels(user_id) -> list[str]:
     user = await select_user(user_id)
     channels = user.channels
     if channels == '':
@@ -45,11 +45,12 @@ async def delete_channel(user_id):
     await user.update(groups='').apply()
 
 
-async def get_userbots(user_id):
+async def get_userbots(user_id) -> list[str]:
     user = await select_user(user_id)
-    json_userbots = user.userbots
-    dict_userbots = json.loads(json_userbots)
-    return dict_userbots['userbots']
+    userbots = user.userbots
+    if userbots == '':
+        return []
+    return userbots.split(', ')
 
 
 async def set_email(user_id, email):
@@ -96,3 +97,18 @@ async def set_date_subscription_finish(user_id, date):
 async def set_username(user_id, username):
     user = await select_user(user_id)
     await user.update(username=username).apply()
+
+
+async def set_subscribe_delay(user_id, new_delay):
+    user = await select_user(user_id)
+    await user.update(subscribe_delay=new_delay).apply()
+
+
+async def set_answer_delay(user_id, new_delay):
+    user = await select_user(user_id)
+    await user.update(answer_delay=new_delay).apply()
+
+
+async def set_new_keywords(user_id, new_keywords: str):
+    user = await select_user(user_id)
+    await user.update(keywords=new_keywords).apply()
