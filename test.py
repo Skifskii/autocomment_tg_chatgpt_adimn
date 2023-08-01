@@ -1,32 +1,20 @@
-import json
+s = """"193.187.145.2:8000:xncc7J:qscRHp"
+"193.187.144.80:8000:xncc7J:qscRHp"
+"193.187.147.148:8000:xncc7J:qscRHp"
+"81.177.182.134:8000:Hw6RYz:7pnoYh"
+"193.187.147.175:8000:xncc7J:qscRHp"
+"193.187.147.175:8000:xncc7J:qscRHp"
+"193.187.144.80:8000:xncc7J:qscRHp"
+"81.177.183.185:8000:Hw6RYz:7pnoYh"
+"185.192.109.245:8000:Hw6RYz:7pnoYh"
+"193.187.145.2:8000:xncc7J:qscRHp"
+"185.192.109.245:8000:Hw6RYz:7pnoYh"
+"193.187.145.214:8000:xncc7J:qscRHp"
+"193.187.145.214:8000:xncc7J:qscRHp"
+"81.177.182.134:8000:Hw6RYz:7pnoYh"
+"193.187.147.148:8000:xncc7J:qscRHp"
+""".split('\n')
 
-d = {
-    "userbots": [
-        {
-            "api_data": {
-                "phone": "+79094009878",
-                "password": "56e5414d9bdF",
-                "telegram_id": "5592822561",
-                "api_id": 28579817,
-                "api_hash": "6c4a628de1b7b5a4461248d2683d45d4"
-            },
-            "firstname": "Азнаур",
-            "lastname": "Хизкияев",
-            "username": "",
-            "sex": "M",
-            "age": "20",
-            "gpt_task": "ты играешь роль комментатора постов в социальных сетях. Пиши короткие комментарии, высказывая свое мнение по теме поста или соглашаясь с автором. Используй сленг. Пиши так, будто общаешься с друзьями.",
-            "use_emoji": False,
-            "formats": {
-                "commenting_posts": True,
-                "chat_in_comments": False,
-                "chat_in_groups": False
-            }
-        }
-    ]
-}
-
-# test_s = '{"userbots": [{"firstname": "", "lastname": "", "username": "", "sex": "M", "age": "20", "gpt_task": "ты играешь роль комментатора постов в социальных сетях. Пиши короткие комментарии, высказывая свое мнение по теме поста или соглашаясь с автором. Используй сленг. Пиши так, будто общаешься с друзьями.", "use_emoji": false, "formats": {"commenting_posts": true, "chat_in_comments": false, "chat_in_groups": false}}]}'
-json_s = json.dumps(d)
-
-print(json_s)
+set_s = set(s)
+for i in set_s:
+    print(i, s.count(i))

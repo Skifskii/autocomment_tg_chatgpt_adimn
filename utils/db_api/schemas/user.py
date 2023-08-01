@@ -9,7 +9,7 @@ class User(BaseModel):
     firstname = Column(String(64), default='')
     lastname = Column(String(64), default='')
     channels = Column(String, default='')
-    userbots = Column(String, default='5592822561')
+    userbots = Column(String, default='')
     email = Column(String, default='')
     status = Column(VARCHAR, default='user')
     date_subscription_finish = Column(String, default='')

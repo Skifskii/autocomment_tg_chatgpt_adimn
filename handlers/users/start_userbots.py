@@ -21,7 +21,7 @@ async def command_start_userbots(message: types.Message):
             try:
                 userbot = await db_userbots.select_userbot(int(userbot_id))
                 await bot.send_message(userbot.telegram_id, f'join_channels {message.from_user.id}')
-                await message.answer('Начинаю подписку на каналы...')
+                await message.answer(f'<b>Юзербот</b> {userbot.firstname} {userbot.lastname} начал подписку на каналы...')
             except Exception as error:
                 await message.answer(unknown_error_answer)
                 await log_all('start_userbots_function', 'error', message.from_user.id, message.from_user.first_name, error)
@@ -41,7 +41,7 @@ async def catch_userbot_messages(message: types.Message):
         if ' : channel does not exist' in message.text:
             await bot.send_message(userbot.owner_id, f'❌ <b>Ошибка</b> при подключении к каналу {message.text.split(" ")[0]}.\nКанал не найден.')
         if ' : joined channel successfully' in message.text:
-            await bot.send_message(userbot.owner_id, f'✅ Юзербот <b>успешно</b> подписался на канал {message.text.split(" ")[0]}')
+            await bot.send_message(userbot.owner_id, f'✅ Юзербот <b>{userbot.firstname} {userbot.lastname}</b> успешно подписался на канал {message.text.split(" ")[0]}')
         if ' : unknown error' in message.text:
             await bot.send_message(userbot.owner_id, f'❌ <b>Ошибка</b> при подключении к каналу {message.text.split(" ")[0]}')
     except Exception as error:

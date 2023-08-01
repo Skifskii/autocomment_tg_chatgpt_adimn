@@ -12,6 +12,9 @@ ikb_edit_userbot.insert(btn_reset_lastname)
 btn_reset_bio = InlineKeyboardButton(text='bio', callback_data='btn_reset_bio')
 ikb_edit_userbot.insert(btn_reset_bio)
 
+btn_reset_photo = InlineKeyboardButton(text='Фото', callback_data='btn_reset_photo')
+ikb_edit_userbot.insert(btn_reset_photo)
+
 btn_reset_sex = InlineKeyboardButton(text='Пол', callback_data='btn_reset_sex')
 ikb_edit_userbot.insert(btn_reset_sex)
 

@@ -6,10 +6,10 @@ from aiogram.dispatcher import FSMContext
 from keyboards.inline import ikb_subscribe, ikb_manage_channels, ikb_manage_userbots, ikb_edit_userbot, ikb_reset_sex, \
     ikb_sure_reset_age, ikb_reset_use_emoji, ikb_reset_commenting_posts, ikb_reset_chat_in_comments, \
     ikb_reset_chat_in_groups, ikb_sure_reset_gpt_task, ikb_reset_common_settings, ikb_manage_common_settings, \
-    ikb_add_keywords, ikb_sure_reset_firstname, ikb_sure_reset_lastname, ikb_sure_reset_bio
+    ikb_add_keywords, ikb_sure_reset_firstname, ikb_sure_reset_lastname, ikb_sure_reset_bio, ikb_sure_reset_photo
 from loader import dp, bot
 from states import NewAge, NewGptTask, TakeNewSubscribeData, TakeNewAnswerData, TakeNewKeywords, NewFirstname, \
-    NewLastname, NewBio
+    NewLastname, NewBio, NewPhoto
 from utils.db_api.quick_commands import user as db_users, userbot as db_userbots
 from utils.yookassa_api.new_payment import create_new_payment, check_payment_status
 
@@ -69,7 +69,7 @@ async def command_my_userbots(message: types.Message):
         await log_all('command_my_userbots', 'error', message.from_user.id, message.from_user.first_name, error)
 
 
-@dp.callback_query_handler(text_contains='btn_move_')
+@dp.callback_query_handler(text_contains='btn_move_userbots')
 async def btn_move_pressed(query: types.CallbackQuery):
     try:
         this_page_number, max_page_number = map(int, query.message.text.split('\n')[-1].split(' ')[-1].split('/'))
@@ -86,7 +86,7 @@ async def btn_move_pressed(query: types.CallbackQuery):
             return
 
         new_page = await create_userbot_profile(query.from_user.id, page_number=new_page_number)
-        await query.message.edit_text(new_page, reply_markup=ikb_manage_channels)
+        await query.message.edit_text(new_page, reply_markup=ikb_manage_userbots)
     except Exception as error:
         await query.message.answer(unknown_error_answer)
         await log_all('btn_move_pressed', 'error', query.message.from_user.id, query.message.from_user.first_name, error)
@@ -345,7 +345,7 @@ async def btn_reset_lastname_pressed(query: types.CallbackQuery):
         userbot_id = userbots[this_page_number - 1]
         userbot = await db_userbots.select_userbot(int(userbot_id))
 
-        await query.message.edit_text(f'Имя: {userbot.firstname}\n\n№ {this_page_number}/{max_page_number}', reply_markup=ikb_sure_reset_lastname)
+        await query.message.edit_text(f'Фамилия: {userbot.lastname}\n\n№ {this_page_number}/{max_page_number}', reply_markup=ikb_sure_reset_lastname)
         await NewLastname.page_number.set()
     except Exception as error:
         await query.message.answer(unknown_error_answer)
@@ -428,10 +428,10 @@ async def btn_firstname_ok_reset_pressed(query: types.CallbackQuery, state: FSMC
         await bot.send_message(query.from_user.id, 'Введите новое bio юзербота')
     except Exception as error:
         await query.message.answer(unknown_error_answer)
-        await log_all('btn_firstname_ok_reset_pressed', 'error', query.message.from_user.id, query.message.from_user.first_name, error)
+        await log_all('btn_bio_ok_reset', 'error', query.message.from_user.id, query.message.from_user.first_name, error)
 
 @dp.message_handler(state=NewBio.new_bio)
-async def take_new_firstname(message: types.Message, state: FSMContext):
+async def take_new_bio(message: types.Message, state: FSMContext):
     try:
         new_bio = message.text
 
@@ -451,7 +451,68 @@ async def take_new_firstname(message: types.Message, state: FSMContext):
         await state.finish()
     except Exception as error:
         await message.answer(unknown_error_answer)
-        await log_all('take_new_firstname', 'error', message.from_user.id, message.from_user.first_name, error)
+        await log_all('take_new_bio', 'error', message.from_user.id, message.from_user.first_name, error)
+
+
+# Photo
+@dp.callback_query_handler(text_contains='btn_reset_photo')
+async def btn_reset_photo(query: types.CallbackQuery):
+    try:
+        userbots = await db_users.get_userbots(int(query.from_user.id))
+        this_page_number, max_page_number = map(int, query.message.text.split('\n')[-1].split(' ')[-1].split('/'))
+        userbot_id = userbots[this_page_number - 1]
+        userbot = await db_userbots.select_userbot(int(userbot_id))
+
+        await query.message.edit_text(f'Хотите изменить фото профиля для этого юзербота?\n\n№ {this_page_number}/{max_page_number}', reply_markup=ikb_sure_reset_photo)
+        await NewPhoto.page_number.set()
+    except Exception as error:
+        await query.message.answer(unknown_error_answer)
+        await log_all('btn_reset_photo', 'error', query.message.from_user.id, query.message.from_user.first_name, error)
+
+@dp.callback_query_handler(text_contains='btn_photo_cancel', state=NewPhoto.page_number)
+async def btn_photo_cancel_pressed(query: types.CallbackQuery, state: FSMContext):
+    try:
+        await bot.delete_message(chat_id=query.from_user.id, message_id=query.message.message_id)
+        await state.finish()
+    except Exception as error:
+        await query.message.answer(unknown_error_answer)
+        await log_all('btn_photo_cancel', 'error', query.message.from_user.id, query.message.from_user.first_name, error)
+
+@dp.callback_query_handler(text_contains='btn_photo_ok_reset', state=NewPhoto.page_number)
+async def btn_photo_ok_reset_pressed(query: types.CallbackQuery, state: FSMContext):
+    try:
+        this_page_number, max_page_number = map(int, query.message.text.split('\n')[-1].split(' ')[-1].split('/'))
+        await state.update_data(page_number=this_page_number)
+        await NewPhoto.new_photo.set()
+        await bot.send_message(query.from_user.id, 'Отправьте новое фото')
+    except Exception as error:
+        await query.message.answer(unknown_error_answer)
+        await log_all('btn_photo_ok_reset', 'error', query.message.from_user.id, query.message.from_user.first_name, error)
+
+@dp.message_handler(content_types=["photo"], state=NewPhoto.new_photo)
+async def take_new_photo(message: types.Message, state: FSMContext):
+    try:
+        userbots = await db_users.get_userbots(int(message.from_user.id))
+        data = await state.get_data()
+        this_page_number = data.get('page_number')
+
+        userbot_id = userbots[this_page_number - 1]
+        userbot = await db_userbots.select_userbot(int(userbot_id))
+
+        if not message.photo:
+            await bot.send_message(message.from_user.id, 'Вы должны отправить фотографию. Чтобы повторить попытку, перейдите в /my_userbots')
+            return
+
+        await bot.send_photo(chat_id=userbot.telegram_id, photo=message.photo[-1].file_id)
+
+        new_profile = await create_userbot_profile(message.from_user.id, this_page_number)
+
+        await bot.send_message(message.from_user.id, 'Фотография успешно установлена!')
+        await bot.send_message(message.from_user.id, new_profile, reply_markup=ikb_manage_userbots)
+        await state.finish()
+    except Exception as error:
+        await message.answer(unknown_error_answer)
+        await log_all('take_new_photo', 'error', message.from_user.id, message.from_user.first_name, error)
 
 
 # Sex

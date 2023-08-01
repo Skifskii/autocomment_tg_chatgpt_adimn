@@ -68,7 +68,8 @@ channels_list_is_empty_message = """
 У вас нет подключенных каналов"""
 
 userbots_list_is_empty_message = """
-У вас нет подключенных юзерботов"""
+У вас нет подключенных 
+Нажмите /add_userbots чтобы добавить"""
 
 channels_list_message = """
 Список каналов:
@@ -194,10 +195,8 @@ stat_answer = """
 admin_funcs_info_answer = """
 ⚙ admin panel ⚙
 
-/stat - статистика
-/select_user - данные пользователя
-/setup_telegram_logs - настройка логов
-/send_to_users (message) - рассылка
+/manage_openai_api_key - управлять ключами GPT
+/manage_proxy - управлять proxy
 """
 
 payment_link_message = """

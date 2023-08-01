@@ -21,3 +21,4 @@ from .ikb_add_keywords import ikb_add_keywords
 from .ikb_sure_reset_firstname import ikb_sure_reset_firstname
 from .ikb_sure_reset_lastname import ikb_sure_reset_lastname
 from .ikb_sure_reset_bio import ikb_sure_reset_bio
+from .ikb_sure_reset_photo import ikb_sure_reset_photo

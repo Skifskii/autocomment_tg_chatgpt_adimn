@@ -11,3 +11,7 @@ from .take_new_keywords import TakeNewKeywords
 from .new_firstname import NewFirstname
 from .new_lastname import NewLastname
 from .new_bio import NewBio
+from .new_proxy import NewProxy
+from .number_of_new_userbots import NumberOfNewUserbots
+from .new_openai_api_key import NewOpenaiApiKey
+from .new_photo import NewPhoto

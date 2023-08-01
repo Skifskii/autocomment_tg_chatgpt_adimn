@@ -50,7 +50,7 @@ async def command_my_channels(message: types.Message):
         await log_all('command_my_channels', 'error', message.from_user.id, message.from_user.first_name, error)
 
 
-@dp.callback_query_handler(text_contains='btn_move_')
+@dp.callback_query_handler(text_contains='btn_move_channels')
 async def btn_move_pressed(query: types.CallbackQuery):
     try:
         this_page_number, max_page_number = map(int, query.message.text.split('\n')[-1].split(' ')[-1].split('/'))

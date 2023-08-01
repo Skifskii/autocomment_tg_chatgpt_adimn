@@ -40,6 +40,14 @@ async def add_channel(user_id, new_channel):
     await user.update(channels=user.channels + ', ' + new_channel).apply()
 
 
+async def add_userbot(user_id, new_userbot_id):
+    user = await select_user(user_id)
+    if user.userbots == '':
+        await user.update(userbots = new_userbot_id).apply()
+        return
+    await user.update(userbots=user.userbots + ', ' + new_userbot_id).apply()
+
+
 async def delete_channel(user_id):
     user = await select_user(user_id)
     await user.update(groups='').apply()

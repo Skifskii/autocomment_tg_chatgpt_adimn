@@ -4,6 +4,11 @@ from logs.log_all import log_all
 from utils.db_api.schemas.userbot import Userbot
 
 
+async def select_all_userbots():
+    userbots = await Userbot.query.gino.all()
+    return userbots
+
+
 async def select_userbot(telegram_id) -> Userbot:
     userbot = await Userbot.query.where(Userbot.telegram_id == telegram_id).gino.first()
     return userbot
@@ -15,6 +20,11 @@ async def add_userbot(telegram_id: int):
         await userbot.create()
     except UniqueViolationError as error:
         await log_all('add_user', 'error', telegram_id, f'User did not added: {error}')
+
+
+async def reset_phone(telegram_id: int, new_value: str):
+    userbot = await select_userbot(telegram_id)
+    await userbot.update(phone=new_value).apply()
 
 
 async def reset_firstname(telegram_id: int, new_value: str):
@@ -65,6 +75,16 @@ async def reset_chat_in_comments(telegram_id: int, new_chat_in_comments: int):
 async def reset_chat_in_groups(telegram_id: int, new_chat_in_groups: int):
     userbot = await select_userbot(telegram_id)
     await userbot.update(chat_in_groups=new_chat_in_groups).apply()
+
+
+async def reset_proxy(telegram_id: int, new_value: str):
+    userbot = await select_userbot(telegram_id)
+    await userbot.update(proxy_data=new_value).apply()
+
+
+async def reset_owner_id(telegram_id: int, new_value: str):
+    userbot = await select_userbot(telegram_id)
+    await userbot.update(owner_id=new_value).apply()
 
 
 # async def test():
