@@ -21,5 +21,7 @@ class Userbot(BaseModel):
     chat_in_comments = Column(Integer, default=0)
     chat_in_groups = Column(Integer, default=0)
     proxy_data = Column(String, default='')
+    alive = Column(Integer, default=0)
+    active = Column(Integer, default=0)
 
     query: sql.select

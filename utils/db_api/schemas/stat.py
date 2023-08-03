@@ -3,7 +3,7 @@ from sqlalchemy import Column, String, sql, Integer
 
 
 class EverydayStats(BaseModel):
-    __tablename__ = 'everyday_stats'
+    __tablename__ = 'stat'
     num_of_alive_userbots = Column(Integer, primary_key=True, default=0)
 
     query: sql.select

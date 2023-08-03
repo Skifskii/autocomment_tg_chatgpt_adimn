@@ -87,6 +87,11 @@ async def reset_owner_id(telegram_id: int, new_value: str):
     await userbot.update(owner_id=new_value).apply()
 
 
+async def reset_alive(telegram_id: int, new_value: str):
+    userbot = await select_userbot(telegram_id)
+    await userbot.update(alive=new_value).apply()
+
+
 # async def test():
 #     await db.set_bind(data.config.POSTGRES_URI)
 #     await db.gino.create_all()
